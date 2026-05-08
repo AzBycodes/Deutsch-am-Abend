@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration - Deutsch am Abend</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-text">Deutsch am Abend</span>
+        </div>
+        <div class="nav-links">
+          <a href="index-en.html">Home</a>
+          <a href="about-en.html">About</a>
+          <a href="services-en.html">Services</a>
+          <a href="registration-en.html" class="active">Register</a>
+          <div class="lang-switch">
+            <a href="registration-de.html" class="lang-btn">DE</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">Course Registration</h1>
+        <p class="page-subtitle">Begin your German language journey today!</p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="container">
+        <div class="registration-container">
+          <div class="form-sidebar">
+            <h3>What to Expect</h3>
+            <div class="step-list">
+              <div class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>Fill Out Form</h4>
+                  <p>
+                    Complete the registration form with your details and course
+                    selection.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>Confirmation Email</h4>
+                  <p>
+                    You'll receive a confirmation email within 24 hours with
+                    payment details.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Course Materials</h4>
+                  <p>
+                    After payment, you'll receive your course materials and
+                    joining instructions.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h4>Start Learning</h4>
+                  <p>Begin your course on the scheduled start date!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="help-box">
+              <h4>Need Help?</h4>
+              <p>
+                If you have questions or need assistance with registration,
+                please contact us at:
+              </p>
+              <p><strong>nuralleangebote@gmail.com</strong></p>
+            </div>
+          </div>
+
+          <div class="form-main">
+            <form id="registrationForm" class="registration-form">
+              <h2>Registration Form</h2>
+
+              <div class="form-section-title">Personal Information</div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName"
+                    >First Name <span class="required">*</span></label
+                  >
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName"
+                    >Last Name <span class="required">*</span></label
+                  >
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email"
+                    >Email Address <span class="required">*</span></label
+                  >
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone"
+                    >Phone Number <span class="required">*</span></label
+                  >
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="dateOfBirth"
+                  >Date of Birth <span class="required">*</span></label
+                >
+                <input
+                  type="date"
+                  id="dateOfBirth"
+                  name="dateOfBirth"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="address" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" />
+                </div>
+                <div class="form-group">
+                  <label for="postalCode">Postal Code</label>
+                  <input type="text" id="postalCode" name="postalCode" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="country"
+                  >Country <span class="required">*</span></label
+                >
+                <input type="text" id="country" name="country" required />
+              </div>
+
+              <div class="form-section-title">Course Selection</div>
+
+              <div class="form-group">
+                <label for="courseLevel"
+                  >Course Level <span class="required">*</span></label
+                >
+                <select id="courseLevel" name="courseLevel" required>
+                  <option value="">Select a course...</option>
+                  <option value="a1">German A1 - Beginner (€450)</option>
+                  <option value="a2">German A2 - Elementary (€480)</option>
+                  <option value="b1">German B1 - Intermediate (€550)</option>
+                  <option value="b2">
+                    German B2 - Upper Intermediate (€580)
+                  </option>
+                  <option value="exam-a1">Exam Preparation A1 (€380)</option>
+                  <option value="exam-a2">Exam Preparation A2 (€380)</option>
+                  <option value="exam-b1">Exam Preparation B1 (€380)</option>
+                  <option value="exam-b2">Exam Preparation B2 (€380)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="startDate"
+                  >Preferred Start Date <span class="required">*</span></label
+                >
+                <select id="startDate" name="startDate" required>
+                  <option value="">Select start date...</option>
+                  <option value="may-5">May 5, 2026 - A1 Course</option>
+                  <option value="may-12">May 12, 2026 - A2 Course</option>
+                  <option value="may-19">May 19, 2026 - Exam Prep</option>
+                  <option value="june-2">June 2, 2026 - B1 Course</option>
+                  <option value="june-9">June 9, 2026 - B2 Course</option>
+                </select>
+              </div>
+
+              <div class="form-section-title">Language Background</div>
+
+              <div class="form-group">
+                <label for="nativeLanguage"
+                  >Native Language <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  id="nativeLanguage"
+                  name="nativeLanguage"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="germanLevel">Current German Level</label>
+                <select id="germanLevel" name="germanLevel">
+                  <option value="none">No previous knowledge</option>
+                  <option value="basic">Basic knowledge (A1)</option>
+                  <option value="elementary">Elementary (A2)</option>
+                  <option value="intermediate">Intermediate (B1)</option>
+                  <option value="upper-intermediate">
+                    Upper Intermediate (B2)
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="previousCourses"
+                  >Have you taken German courses before?</label
+                >
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="previousCourses" value="yes" />
+                    <span>Yes</span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      name="previousCourses"
+                      value="no"
+                      checked
+                    />
+                    <span>No</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-section-title">
+                Learning Goals & Additional Information
+              </div>
+
+              <div class="form-group">
+                <label for="learningGoals"
+                  >Why do you want to learn German?</label
+                >
+                <textarea
+                  id="learningGoals"
+                  name="learningGoals"
+                  rows="4"
+                  placeholder="e.g., For work, university studies, travel, personal interest..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="paymentPlan">Payment Preference</label>
+                <select id="paymentPlan" name="paymentPlan">
+                  <option value="full">Full payment</option>
+                  <option value="installments-2">2 installments</option>
+                  <option value="installments-3">3 installments</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="comments">Additional Comments or Questions</label>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  rows="4"
+                  placeholder="Any special requirements, questions, or information we should know..."
+                ></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="terms" required />
+                  <span
+                    >I agree to the terms and conditions and confirm that the
+                    information provided is accurate.
+                    <span class="required">*</span></span
+                  >
+                </label>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="newsletter" />
+                  <span
+                    >I would like to receive updates about courses and special
+                    offers via email.</span
+                  >
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-large">
+                  Submit Registration
+                </button>
+                <p class="form-note">
+                  All fields marked with <span class="required">*</span> are
+                  required
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Deutsch am Abend</h4>
+            <p>Excellence in German language education since 2015</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="about-en.html">About Us</a>
+            <a href="services-en.html">Our Services</a>
+            <a href="registration-en.html">Register</a>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: info.deutschamabend@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Deutsch am Abend. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
