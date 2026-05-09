@@ -155,8 +155,8 @@ function showConfirmation() {
   const isEnglish = language === "en";
 
   const message = isEnglish
-    ? "Your registration form is ready to send!\n\nYour email client should open shortly. If it doesn't open automatically, please send an email to info.deutschamabend@gmail.com with your registration details.\n\nYou will receive a confirmation within 24 hours."
-    : "Ihr Anmeldeformular ist versandbereit!\n\nIhr E-Mail-Client sollte sich in Kürze öffnen. Falls er sich nicht automatisch öffnet, senden Sie bitte eine E-Mail an info.deutschamabend@gmail.com mit Ihren Anmeldedaten.\n\nSie erhalten innerhalb von 24 Stunden eine Bestätigung.";
+    ? "Your registration form is ready to send!\n\nYour email should open shortly. If it doesn't open automatically, please send an email to info.deutschamabend@gmail.com with your registration details.\n\nYou will receive a confirmation within 24 hours."
+    : "Ihr Anmeldeformular ist versandbereit!\n\nIhr E-Mail sollte sich in Kürze öffnen. Falls er sich nicht automatisch öffnet, senden Sie bitte eine E-Mail an info.deutschamabend@gmail.com mit Ihren Anmeldedaten.\n\nSie erhalten innerhalb von 24 Stunden eine Bestätigung.";
 
   alert(message);
 }
