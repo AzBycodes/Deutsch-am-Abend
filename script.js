@@ -142,8 +142,8 @@ function createEmailBody(data, courseName) {
   // Footer
   body += "---\n";
   body += isEnglish
-    ? "This registration was submitted via the German Language Academy website.\n"
-    : "Diese Anmeldung wurde über die Website der Deutschen Sprachakademie eingereicht.\n";
+    ? "This registration was submitted via the Deutsch am Abend website.\n"
+    : "Diese Anmeldung wurde über die Websiete der Deutsch am Abend eingereicht.\n";
   body += new Date().toLocaleString();
 
   return body;
